@@ -1,0 +1,7 @@
+<% include partials/header %>
+<h1> Edit Daily Goal </h1>
+
+<form action="/dailyGoal/<%= dailyGoal._id %>?_method=PUT" method="POST">
+<input type="text" name="goal" value="<%= dailyGoal.goal %>">
+<button type="submit"> Submit </button>
+</form> 

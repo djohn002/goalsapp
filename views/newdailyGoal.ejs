@@ -1,0 +1,14 @@
+<% include partials/header %>
+<h1> Create Your new goal </h1>
+<p> 
+<form action="/dailyGoal" method="POST">
+    <input type="text" placeholder="Type New Daily Goal Here" name="goal">
+    <select name="typeofGoal">
+        <option value="dailytask"> Daily Task </option>
+        <option value="dailyrepeatedtask"> Daily Repeated Task </option>m 
+        <option value="longTerm"> Long Term Goal </option>
+        <option value="weakness"> Weakness </option>
+    </select>
+    <button type="submit">Submit </button>
+</form>
+</p>

@@ -1,0 +1,163 @@
+<% include partials/header %>
+
+<div class="container text-center">
+<div class="container">
+  <div class="font-weight-bold"> <h1 class="display-4"> Daily Tasks </h1> </div>
+  <hr>
+  <% dailyGoals.forEach(function(dailyGoal){ %>
+    <% if (dailyGoal.typeofGoal=="dailytask"){ %>
+            <div class=" form-row"> 
+            
+              <div class="col">
+              <h5> <%= dailyGoal.goal %> </h5>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" role="button" href="/dailyGoal/<%= dailyGoal._id %>"><i class="fas fa-info"></i></a>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" href="/dailyGoal/<%= dailyGoal._id %>/edit" role="button"> <i class="fas fa-edit"></i> </a>
+              </div>
+              
+              <div class="col">
+               <form action="/dailyGoal/<%= dailyGoal._id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="btn btn-primary btn-sm"> <i class="fas fa-trash-alt"></i></button>
+               </form>
+               </div>
+               
+               </div>
+               
+               
+
+        <% } %>
+        <% }) %>
+
+<div class="container text-center">
+  <p></p>
+  <p></p>
+<div class="container">
+  <div class="font-weight-bold"> <h1 class="display-4"> Daily Repeated Tasks </h1> </div>
+  <hr>
+  <% dailyGoals.forEach(function(dailyGoal){ %>
+    <% if (dailyGoal.typeofGoal=="dailyrepeatedtask"){ %>
+            <div class=" form-row"> 
+            
+              <div class="col">
+              <h5> <%= dailyGoal.goal %> </h5>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" role="button" href="/dailyGoal/<%= dailyGoal._id %>"><i class="fas fa-info"></i></a>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" href="/dailyGoal/<%= dailyGoal._id %>/edit" role="button"> <i class="fas fa-edit"></i> </a>
+              </div>
+              
+              <div class="col">
+               <form action="/dailyGoal/<%= dailyGoal._id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="btn btn-primary btn-sm"> <i class="fas fa-trash-alt"></i></button>
+               </form>
+               </div>
+               
+               </div>
+               
+               
+
+        <% } %>
+        <% }) %>
+
+
+<div class="container text-center">
+  <p></p>
+  <p></p>
+<div class="container">
+  <div class="font-weight-bold"> <h1 class="display-4"> Long Term Goals </h1> </div>
+  <hr>
+  <% dailyGoals.forEach(function(dailyGoal){ %>
+    <% if (dailyGoal.typeofGoal=="longTerm"){ %>
+            <div class=" form-row"> 
+            
+              <div class="col">
+              <h5> <%= dailyGoal.goal %> </h5>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" role="button" href="/dailyGoal/<%= dailyGoal._id %>"><i class="fas fa-info"></i></a>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" href="/dailyGoal/<%= dailyGoal._id %>/edit" role="button"> <i class="fas fa-edit"></i> </a>
+              </div>
+              
+              <div class="col">
+               <form action="/dailyGoal/<%= dailyGoal._id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="btn btn-primary btn-sm"> <i class="fas fa-trash-alt"></i></button>
+               </form>
+               </div>
+               
+               </div>
+               
+               
+
+        <% } %>
+        <% }) %>
+
+<div class="container text-center">
+    <p></p>
+  <p></p>
+<div class="container">
+  <div class="font-weight-bold"> <h1 class="display-4"> Weaknesses & Things to work on </h1> </div>
+  <hr>
+  <% dailyGoals.forEach(function(dailyGoal){ %>
+    <% if (dailyGoal.typeofGoal=="weakness"){ %>
+            <div class=" form-row"> 
+            
+              <div class="col">
+              <h5> <%= dailyGoal.goal %> </h5>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" role="button" href="/dailyGoal/<%= dailyGoal._id %>"><i class="fas fa-info"></i></a>
+              </div>
+              
+              <div class="col">
+              <a class="btn btn-primary btn-sm" href="/dailyGoal/<%= dailyGoal._id %>/edit" role="button"> <i class="fas fa-edit"></i> </a>
+              </div>
+              
+              <div class="col">
+               <form action="/dailyGoal/<%= dailyGoal._id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="btn btn-primary btn-sm"> <i class="fas fa-trash-alt"></i></button>
+               </form>
+               </div>
+               
+               </div>
+               
+               
+
+        <% } %>
+        <% }) %>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
